@@ -1,9 +1,10 @@
 #pragma once
-#include <cstddef>
+#include <cstdint>
 
-// 2024-03-16 19:02:09.636519200 UTC
+// 2024-12-15 19:24:45.945100900 UTC
 
 namespace hazedumper {
+constexpr ::std::int64_t timestamp = 1734290685;
 namespace netvars {
 constexpr ::std::ptrdiff_t cs_gamerules_data = 0x0;
 constexpr ::std::ptrdiff_t m_ArmorValue = 0x117CC;
@@ -19,9 +20,7 @@ constexpr ::std::ptrdiff_t m_aimPunchAngle = 0x303C;
 constexpr ::std::ptrdiff_t m_aimPunchAngleVel = 0x3048;
 constexpr ::std::ptrdiff_t m_angEyeAnglesX = 0x117D0;
 constexpr ::std::ptrdiff_t m_angEyeAnglesY = 0x117D4;
-constexpr ::std::ptrdiff_t m_bBombDefused = 0x29C0;
 constexpr ::std::ptrdiff_t m_bBombPlanted = 0x9A5;
-constexpr ::std::ptrdiff_t m_bBombTicking = 0x2990;
 constexpr ::std::ptrdiff_t m_bFreezePeriod = 0x20;
 constexpr ::std::ptrdiff_t m_bGunGameImmunity = 0x9990;
 constexpr ::std::ptrdiff_t m_bHasDefuser = 0x117DC;
@@ -57,18 +56,15 @@ constexpr ::std::ptrdiff_t m_flNextPrimaryAttack = 0x3248;
 constexpr ::std::ptrdiff_t m_flSimulationTime = 0x268;
 constexpr ::std::ptrdiff_t m_flTimerLength = 0x29A4;
 constexpr ::std::ptrdiff_t m_hActiveWeapon = 0x2F08;
-constexpr ::std::ptrdiff_t m_hBombDefuser = 0x29C4;
 constexpr ::std::ptrdiff_t m_hMyWeapons = 0x2E08;
 constexpr ::std::ptrdiff_t m_hObserverTarget = 0x339C;
 constexpr ::std::ptrdiff_t m_hOwner = 0x29DC;
 constexpr ::std::ptrdiff_t m_hOwnerEntity = 0x14C;
-constexpr ::std::ptrdiff_t m_hViewModel = 0x3308;
 constexpr ::std::ptrdiff_t m_iAccountID = 0x2FD8;
 constexpr ::std::ptrdiff_t m_iClip1 = 0x3274;
 constexpr ::std::ptrdiff_t m_iCompetitiveRanking = 0x1A84;
 constexpr ::std::ptrdiff_t m_iCompetitiveWins = 0x1B88;
 constexpr ::std::ptrdiff_t m_iCrosshairId = 0x11838;
-constexpr ::std::ptrdiff_t m_iDefaultFOV = 0x333C;
 constexpr ::std::ptrdiff_t m_iEntityQuality = 0x2FBC;
 constexpr ::std::ptrdiff_t m_iFOV = 0x31F4;
 constexpr ::std::ptrdiff_t m_iFOVStart = 0x31F8;
@@ -82,14 +78,11 @@ constexpr ::std::ptrdiff_t m_iShotsFired = 0x103E0;
 constexpr ::std::ptrdiff_t m_iState = 0x3268;
 constexpr ::std::ptrdiff_t m_iTeamNum = 0xF4;
 constexpr ::std::ptrdiff_t m_lifeState = 0x25F;
-constexpr ::std::ptrdiff_t m_nBombSite = 0x2994;
 constexpr ::std::ptrdiff_t m_nFallbackPaintKit = 0x31D8;
 constexpr ::std::ptrdiff_t m_nFallbackSeed = 0x31DC;
 constexpr ::std::ptrdiff_t m_nFallbackStatTrak = 0x31E4;
 constexpr ::std::ptrdiff_t m_nForceBone = 0x268C;
-constexpr ::std::ptrdiff_t m_nModelIndex = 0x258;
 constexpr ::std::ptrdiff_t m_nTickBase = 0x3440;
-constexpr ::std::ptrdiff_t m_nViewModelIndex = 0x29D0;
 constexpr ::std::ptrdiff_t m_rgflCoordinateFrame = 0x444;
 constexpr ::std::ptrdiff_t m_szCustomName = 0x304C;
 constexpr ::std::ptrdiff_t m_szLastPlaceName = 0x35C4;
@@ -98,7 +91,6 @@ constexpr ::std::ptrdiff_t m_vecOrigin = 0x138;
 constexpr ::std::ptrdiff_t m_vecVelocity = 0x114;
 constexpr ::std::ptrdiff_t m_vecViewOffset = 0x108;
 constexpr ::std::ptrdiff_t m_viewPunchAngle = 0x3030;
-constexpr ::std::ptrdiff_t m_zoomLevel = 0x33E0;
 } // namespace netvars
 namespace signatures {
 constexpr ::std::ptrdiff_t anim_overlays = 0x2990;
@@ -115,7 +107,6 @@ constexpr ::std::ptrdiff_t dwClientState_MapDirectory = 0x188;
 constexpr ::std::ptrdiff_t dwClientState_MaxPlayer = 0x388;
 constexpr ::std::ptrdiff_t dwClientState_PlayerInfo = 0x52C0;
 constexpr ::std::ptrdiff_t dwClientState_State = 0x108;
-constexpr ::std::ptrdiff_t dwClientState_ViewAngles = 0x4D90;
 constexpr ::std::ptrdiff_t dwEntityList = 0x4E051DC;
 constexpr ::std::ptrdiff_t dwForceAttack = 0x3233024;
 constexpr ::std::ptrdiff_t dwForceAttack2 = 0x3233030;
@@ -136,26 +127,20 @@ constexpr ::std::ptrdiff_t dwMouseEnable = 0x523E410;
 constexpr ::std::ptrdiff_t dwMouseEnablePtr = 0x523E3E0;
 constexpr ::std::ptrdiff_t dwPlayerResource = 0x3231380;
 constexpr ::std::ptrdiff_t dwRadarBase = 0x523BCB4;
-constexpr ::std::ptrdiff_t dwSensitivity = 0xDF3B98;
-constexpr ::std::ptrdiff_t dwSensitivityPtr = 0xDF3B98;
 constexpr ::std::ptrdiff_t dwSetClanTag = 0x8DAB0;
 constexpr ::std::ptrdiff_t dwViewMatrix = 0x4DF6024;
 constexpr ::std::ptrdiff_t dwWeaponTable = 0x526388C;
 constexpr ::std::ptrdiff_t dwWeaponTableIndex = 0x326C;
-constexpr ::std::ptrdiff_t dwYawPtr = 0xDF3928;
-constexpr ::std::ptrdiff_t dwZoomSensitivityRatioPtr = 0xDF9398;
 constexpr ::std::ptrdiff_t dwbSendPackets = 0xDD2D2;
 constexpr ::std::ptrdiff_t dwppDirect3DDevice9 = 0xA62C0;
-constexpr ::std::ptrdiff_t find_hud_element = 0x251A3A40;
+constexpr ::std::ptrdiff_t find_hud_element = 0x273E3A40;
 constexpr ::std::ptrdiff_t force_update_spectator_glow = 0x3DD09A;
 constexpr ::std::ptrdiff_t interface_engine_cvar = 0x3FA9C;
 constexpr ::std::ptrdiff_t is_c4_owner = 0x3EA8A0;
 constexpr ::std::ptrdiff_t m_bDormant = 0xED;
-constexpr ::std::ptrdiff_t m_bIsLocalPlayer = 0x3628;
 constexpr ::std::ptrdiff_t m_flSpawnTime = 0x103C0;
 constexpr ::std::ptrdiff_t m_pStudioHdr = 0x2950;
 constexpr ::std::ptrdiff_t m_pitchClassPtr = 0x523E308;
-constexpr ::std::ptrdiff_t m_yawClassPtr = 0xDF3928;
 constexpr ::std::ptrdiff_t model_ambient_min = 0x5A1194;
 constexpr ::std::ptrdiff_t set_abs_angles = 0x1EA950;
 constexpr ::std::ptrdiff_t set_abs_origin = 0x1EA790;
